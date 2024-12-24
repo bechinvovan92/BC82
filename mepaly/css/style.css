@@ -1,0 +1,29 @@
+/* css mac dinh */
+/* reset css: tự quản lí code tốt hơn */
+* {
+    margin: 0;
+}
+header {
+    /* vh (view height) 100vn -> full hết khung của trình duyệt */
+    /* vw(view width) điều chỉnh chiều dài: */
+    height:100vh ; /*hiển thị 100% khung hình */
+    background-color: black;
+    display: flex;
+    /* truc chinh: truc ngang justify-content */
+    /* truc phục: tục dọc align-items*/
+    justify-content: ;
+    align-items: center;
+    flex-direction: flex-start;
+}
+
+.header-logo{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.header-navigation{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
