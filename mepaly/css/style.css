@@ -2,28 +2,79 @@
 /* reset css: tự quản lí code tốt hơn */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
 }
+
+/* Công thức tính chiều dài và chiều cao
+    box-sizing: border-box;
+    Chiều dài: 
+    Width = nội dung bên trong + padding-left + padding-right+boder-left+ border-right;
+
+*/
+.container {
+    max-width: 1440px; 
+    margin: 0 auto;
+}
+
 header {
-    /* vh (view height) 100vn -> full hết khung của trình duyệt */
-    /* vw(view width) điều chỉnh chiều dài: */
-    height:100vh ; /*hiển thị 100% khung hình */
-    background-color: black;
+    background-color: black  ;
+}
+
+header .header-content{
     display: flex;
-    /* truc chinh: truc ngang justify-content */
-    /* truc phục: tục dọc align-items*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-content li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.header-content-logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Hero banner */
+.hero-banner{
+    height: 70vh;
+    background-image: url(./../img/home_slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: flex-start;
+    text-align: center;
+    color: white;
 }
 
-.header-logo{
-    width: 150px;
-    height: 150px;
-    background-color: red;
+.hero-banner button{
+    border: none;
+    padding: 10px 30px;
+    background-color: #E62B4A;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.header-navigation{
-    width: 150px;
-    height: 150px;
-    background-color: blue;
+.hero-banner .sub-title {
+    font-size: 25px;
+}
+
+.hero-banner h1 {
+    font-size: 75px;
+    line-height: 83px;
+    margin-bottom: 15px;
 }
