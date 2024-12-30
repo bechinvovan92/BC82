@@ -33,12 +33,20 @@ header a{
     text-decoration: none;
 }
 
+header nav a:hover {
+    color: #E62B4A;
+}
+
+header nav .active a{
+    color:  #E62B4A;
+}
 .header-content li{
     display: inline-block;
     margin-right: 20px;
     font-size: 17px;
     text-transform: uppercase;
 }
+
 
 .header-content-logo{
     font-size: 32px;
@@ -67,6 +75,9 @@ header a{
     color: white;
     font-size: 16px;
     font-weight: 300;
+    cursor: pointer;
+    /* Thoi gian thay doi sau khi hover */
+    transition: background-color 0.5s;
 }
 
 .hero-banner .sub-title {
@@ -77,4 +88,48 @@ header a{
     font-size: 75px;
     line-height: 83px;
     margin-bottom: 15px;
+}
+
+/* khi hover vào vùng này thì đổi màu */
+.hero-banner button:hover {
+    background-color: #B0213A;
+}
+
+/* đây là demo position */
+.demo_position{
+    background-color: black;
+    height: 100vh;
+    position: relative;
+}
+
+.demo1{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    /* Sẽ nằm lên trên */
+    position: absolute;
+
+    /* Z-index phải có positon */
+    z-index: 2;
+
+    /* top, bottom, left, right */
+    /* left: -50px; */
+    /* right: -50px; */
+    /* top: 50px; */
+    /* bottom: 50px; */
+
+    /* phải có một thẻ cha relative
+        thẻ con bên trong absolute
+    */
+    right: 0;
+    top: 0   ;
+
+}
+
+/* Transform dùng để di chuyển, rotate , scale */
+.demo2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(45deg);
 }
